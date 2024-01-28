@@ -1,0 +1,1363 @@
+<html> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="w3.css">
+	<body style="background-color: black;">
+	<div class="w3-container">
+		<center>
+			<img src="img/logo.png" style="width: 30%; height: auto; background-size: cover;" class="logo">
+		</center>
+	</div>
+	
+	<div class="w3-container content">
+		<div class="w3-panel w3-blue w3-xlarge tabel">
+			<button class="w3-bar-item w3-button w3-hover-white w3-round-xxlarge" onclick="openBleach('HOME')">HOME</button>
+			<button class="w3-bar-item w3-button w3-hover-white w3-round-xxlarge" onclick="openBleach('STORY')">STORY</button>
+			<div class="w3-dropdown-hover">
+				<button class="w3-button w3-round-xxlarge">CHARACTERS</button>
+				<div class="w3-dropdown-content w3-bar-block w3-card-4">
+					<button class="w3-bar-item w3-button" onclick="openBleach('Sekai')">WORLD OF THE LIVING</button>
+					<button class="w3-bar-item w3-button" onclick="openBleach('Shinigami')">SHINIGAMI</button>
+					<button class="w3-bar-item w3-button" onclick="openBleach('Quincy')">QUINCY</button>
+				</div>
+			</div>
+			<button class="w3-bar-item w3-button w3-hover-white w3-round-xxlarge" onclick="openBleach('ABOUT')">ABOUT ME</button>
+		</div>
+	</div>
+	
+	<div id="Sekai" class="w3-container bagian" style="display:none">
+		<div class="w3-panel w3-orange sekai">
+			<div class="ichigo">
+				<h1>KUROSAKI ICHIGO</h1>
+				<p>A high school student who can see ghosts. 
+				Lost his mother as a child to an attack by Hollows.
+				Acquires Soul Reaper powers through an encounter with Rukia 
+				Kuchiki and becomes a Substitute Soul Reaper.
+				Through the turmoil that embroiled the World of the Living, 
+				the Soul Society, and Hueco Mundo, he gains the trust of the 
+				other Soul Reapers and lives up to his position.</p>
+				<img src="img/chara_01.png" class="ichi-1">
+				<img src="img/face_01.png" class="ichi-2">
+			</div>
+			<hr class="pembatas">
+			<div class="urahara">
+				<h1>URAHARA KISUKE</h1>
+				<p>Once Captain of the Squad 12 and the first chief of the Department 
+					of Research and Development.
+					Currently runs a penny candy store called “Urahara’s Shop,” 
+					and provides various supplies to Soul Reapers.
+					Supports Ichigo in many ways as he grows as a Soul Reaper.</p>
+				<img src="img/chara_05.png" class="ura-1">
+				<img src="img/face_05.png" class="ura-2">
+			</div>
+
+			<hr class="pembatas">
+			<div class="orihime">
+				<h1>INOUE ORIHIME</h1>
+				<p>Ichigo's classmate. Possesses a cheerful personality and carefree smile.
+					Often makes zany off-topic remarks, but is always thinking of Ichigo and her friends.
+					Awakens to her spiritual powers after Ichigo rescues her after the Hollowfication 
+					of her older brother.</p>
+				<img src="img/chara_03.png" class="ori-1">
+				<img src="img/face_03.png" class="ori-2">
+			</div>
+
+			<hr class="pembatas">
+			<div class="chad">
+				<h1>SADO YASUTORA</h1>
+				<p>Ichigo’s good friend since middle school.
+					He is one-quarter Mexican. His friends call him “Chad.” 
+					As a child, he often resorted to violence until his grandfather set him straight.
+					Since then, he has refrained from using his strength for selfish reasons.
+					Accompanies Ichigo with the promise he made to him.</p>
+				<img src="img/chara_04.png" class="chad-1">
+				<img src="img/face_04.png" class="chad-2">
+			</div>
+
+			<hr class="pembatas">
+			<div class="yoruichi">
+				<h1>SHIHOUIN YORUICHI</h1>
+				<p>Former second division commander.
+					When he was a captain, he was the Commander-in-Chief of Covert Mobile 
+					Operations and
+					A powerful man who also served as the general commander of the 1st squad,
+					``Punishing Army''.
+					He also served as the 22nd head of the ``Shifuin Family,'' 
+					one of the four great aristocrats.
+					He is free-spirited and likes to make fun of people.
+					He is an expert in walking and is so strong that he is nicknamed 
+					``Shunshin Yoruichi''.
+					Along with Urahara, he supports Ichigo in various ways.</p>
+				<img src="img/chara_76.png" class="yoru-1">
+				<img src="img/face_76.png" class="yoru-2">
+			<hr class="pembatas">
+			</div>
+		</div>
+	</div>
+	
+	<div id="Shinigami" class="w3-container bagian" style="display:none">
+		<div class="w3-panel w3-red shinigami">
+			<div class="yamamoto">
+				<h1>YAMAMOTO GENRYUSAI SHIGEKUNI</h1>
+				<p>Head Captain of the Thirteen Court Guard Squads and captain of Squad 1.
+					Founder of the Thirteen Court Guard Squads and the highest-ranking of all Soul Reapers.
+					Despite his advanced age, he has trained his body to its limits and boasts overwhelming 
+					combat power.
+					Shunsui Kyoraku and Jushiro Ukitake are among his former protégés.</p>
+				<img src="img/chara_06.png" class="yama-1">
+				<img src="img/face_06.png" class="yama-2">
+			</div>
+
+			<hr class="pembatas">
+			<div class="kyoraku">
+				<h1>KYORAKU SHUNSUI</h1>
+				<p>Captain of Squad 8.
+					Does not like fighting and enjoys drinking and wearing flashy women’s kimono.
+					While conspicuous by his aloof and frivolous behavior, he is actually prudent 
+					and well-liked by those around him.
+					When Rukia is about to be executed, he collaborated with Jushiro Ukitake to 
+					destroy the Sokyoku and crossed swords with his master, Shigekuni Genryusai Yamamoto.</p>
+				<img src="img/chara_14.png" class="kyo-1">
+				<img src="img/face_14.png" class="kyo-2">
+			</div>
+
+			<hr class="pembatas">
+			<div class="unohana">
+				<h1>UNOHANA RETSU</h1>
+				<p>Captain of Squad 4 whose main mission is rescue.
+					Although possessing a gentle and mild-mannered personality, 
+					she is frightening when angered and commands the Soul Reapers’ respect.
+					She was the first to recognize Sosuke Aizen’s conspiracy during the turmoil 
+					involving the Soul Society and provide a solution.
+					She often guides Soul Reapers with her calm decision-making.</p>
+				<img src="img/chara_09.png" class="uno-1">
+				<img src="img/face_09.png" class="uno-2">
+			</div>
+
+			<hr class="pembatas">
+			<div class="byakuya">
+				<h1>KUCHIKI BYAKUYA</h1>
+				<p>Captain of Squad 6.
+					Patriarch of the Kuchiki Clan, one of the Four Great 
+					Noble Clans and elder brother-in-law of Rukia Kuchiki.
+					As a nobleman, he has disciplined himself to be a role model 
+					for all Soul Reapers and rarely shows his emotions, but there 
+					is a passion in his heart.
+					Following the turmoil in the Soul Society, he comes to respect the pride 
+					and bond between himself and his fellow Soul Reapers.</p>
+				<img src="img/chara_11.png" class="bya-1">
+				<img src="img/face_11.png" class="bya-2">
+			</div>
+
+			<hr class="pembatas">
+			<div class="hitsugaya">
+				<h1>HITSUGAYA TOSHIRO</h1>
+				<p>A child prodigy who rose to captain of Squad 10 as the youngest captain ever.
+					A skilled fighter and administrator.
+					Despite his youthful appearance, he possesses keen intuition.
+					He acts calmly, but shows his fury at times.
+					He and his lieutenant, Rangiku Matsumoto, are complete opposites, 
+					but share a good relationship.
+					Momo Hinamori’s friend since childhood.</p>
+				<img src="img/chara_16.png" class="toshi-1">
+				<img src="img/face_16.png" class="toshi-2">
+			</div>
+
+			<hr class="pembatas">
+			<div class="rukia">
+				<h1>KUCHIKI RUKIA</h1>
+				<p>The person who met Ichigo and shared her Soul Reaper powers with him.
+					Rescued by Ichigo when Sosuke Aizen plotted to kill her.
+					Later returned to the squad to battle together with Ichigo and her fellow 
+					squad members not just as a Soul Reaper, but as a comrade.
+					Played a role in restoring Ichigo's powers after he lost his Soul Reaper powers.
+					Currently lieutenant of Squad 13.</p>
+				<img src="img/chara_20.png" class="ru-1">
+				<img src="img/face_20.png" class="ru-2">
+			</div>
+
+			<hr class="pembatas">
+			<div class="renji">
+				<h1>ABARAI RENJI</h1>
+				<p>Lieutenant of Squad 6.
+					Although a lieutenant, he has mastered Bankai and is 
+					as strong as any captain.
+					A friend of Rukia Kuchiki since their Rukon District days; the two are like family.
+					When Rukia's execution was decided, he built a cooperative relationship with 
+					Ichigo and worked together to rescue Rukia.</p>
+				<img src="img/chara_12.png" class="ren-1">
+				<img src="img/face_12.png" class="ren-2">
+			</div>
+
+			<hr class="pembatas">
+			<div class="aizen">
+				<h1>AIZEN SOUSUKE</h1>
+				<p>Once captain of Squad 5 of the Thirteen Court Guard Squads.
+					Responsible for the turmoil involving the Soul Society and Hueco Mundo.
+					Sealed following a battle with the Soul Reapers and Ichigo.
+					Currently imprisoned in the Central Underground Great Prison “Muken.</p>
+				<img src="img/chara_50.png" class="ai-1">
+				<img src="img/face_50.png" class="ai-2">
+			</div>
+
+			<hr class="pembatas">
+			<div class="nanao">
+				<h1>ISE NANAO</h1>
+				<p>Lieutenant of Squad 8.
+					A very serious and pragmatic person and the complete opposite of her captain, 
+					Shunsui Kyoraku.
+					Often treats Shunsui coldly, but in her heart trusts him deeply and devotes herself 
+					to being his adjutant.</p>
+				<img src="img/chara_37.png" class="ise-1">
+				<img src="img/face_37.png" class="ise-2">
+			</div>
+
+			<hr class="pembatas">
+			<div class="soifon">
+				<h1>SOI FON</h1>
+				<p>Captain of Squad 2 as well as captain of Stealth Force, a unit whose main mission 
+					is behind-the-scenes operations.
+					She is from the lower class noble clan, the Fon Clan. Reveres Yoruichi Shihoin, her 
+					predecessor and former superior.
+					Her intense feelings for her have also been a source of conflict between them, however.</p>
+				<img src="img/chara_07.png" class="soi-1">
+				<img src="img/face_07.png" class="soi-2">
+			</div>
+
+			<hr class="pembatas">
+			<div class="kenpachi">
+				<h1>ZARAKI KENPACHI</h1>
+				<p>Captain of Squad 11.
+					A native of “Zaraki” in the Rukon District. Goes by the name “Kenpachi,” 
+					a name given to the strongest Soul Reaper of his generation.
+					He lives for sword fighting and considers enjoying battle to be the ultimate pleasure.
+					Wears an eye patch that absorbs and suppresses his spiritual power so that he can enjoy battling 
+					adversaries who are less skilled than himself.</p>
+				<img src="img/chara_17.png" class="ken-1">
+				<img src="img/face_17.png" class="ken-2">
+			</div>
+			<hr class="pembatas">
+		</div>
+	</div>
+	
+	<div id="Quincy" class="w3-container bagian" style="display:none">
+		<div class="w3-panel w3-blue quincy">
+			<div class="yhwach">
+				<h1>YHWACH</h1>
+				<p>Founder of the Quincies and leader of the “Wandenreich.” Addressed as“His Majesty.”
+					Cold and merciless to his followers and does not hesitate to take their lives on the spot.</p>
+				<img src="img/chara_23.png" class="yuha-1">
+				<img src="img/face_23.png" class="yuha-2">
+			</div>
+
+			<hr class="pembatas">
+			<div class="ishida">
+				<h1>ISHIDA URYU</h1>
+				<p>Ichigo's classmate. One of the last remaining descendants of the Quincies.
+					Looks up to his late grandfather, Soken as his master.
+					Does not get along with his father, Ryuken, who is adverse to the Quincies.
+					Once despised Ichigo and fought him as an enemy, but later became comrades-in-arms 
+					after fighting a battle together.</p>
+				<img src="img/chara_02.png" class="uryu-1">
+				<img src="img/face_02.png" class="uryu-2">
+			</div>
+
+			<hr class="pembatas">
+			<div class="jugram">
+				<h1>JUGRAM HASCHWALTH</h1>
+				<p>Commander of the Stern Ritter.
+					Serves Yhwach as his aide.
+					Loyal to Yhwach and is considered to be his successor.</p>
+				<img src="img/chara_24.png" class="ju-1">
+				<img src="img/face_24.png" class="ju-2">
+			</div>
+
+			<hr class="pembatas">
+			<div class="bambietta">
+				<h1>BAMBIETTA BASTERBINE</h1>
+				<p>Stern Ritter.
+					A lively girl.</p>
+				<img src="img/chara_26.png" class="bambi-1">
+				<img src="img/face_26.png" class="bambi-2">
+			</div>
+
+			<hr class="pembatas">
+			<div class="bazzb">
+				<h1>BAZZARD BLACK</h1>
+				<p>Stern Ritter.
+					Wears his hair in a mohawk.
+					Belligerent and ambitious.</p>
+				<img src="img/chara_28.png" class="bazz-1">
+				<img src="img/face_28.png" class="bazz-2">
+			</div>
+
+			<hr class="pembatas">
+			<div class="gremmy">
+				<h1>GREMMY THOUMEAUX</h1>
+				<p>Stern Ritter.
+					He is a blond boy who always wears a hood.
+					Even his own body was a "product of his imagination."</p>
+				<img src="img/chara_65.png" class="grem-1">
+				<img src="img/face_65.png" class="grem-2">
+			</div>
+
+			<hr class="pembatas">
+			<div class="lille">
+				<h1>LILLE BARRO</h1>
+				<p>Stern Ritter.
+					A member of the "SS".
+					He is confident and has a distinctive marking on his left eye.</p>
+				<img src="img/chara_84.png" class="lil-1">
+				<img src="img/face_84.png" class="lil-2">
+			</div>
+
+			<hr class="pembatas">
+			<div class="askin">
+				<h1>ASKIN NAKK LE VAAR</h1>
+				<p>Stern Ritter.
+					He became a member of the "Issue Guards" during the march to the Reiou Palace.
+					He has an easy-going demeanor, but his observational eye is keen.</p>
+				<img src="img/chara_25.png" class="ask-1">
+				<img src="img/face_25.png" class="ask-2">
+			</div>
+
+			<hr class="pembatas">
+			<div class="liltotto">
+				<h1>LILTOTTO LAMPERD</h1>
+				<p>Stern Ritter.
+					A member of "Bumbees". Her nickname is "Lil".
+					She is a petite girl, but she has a sharp tongue that doesn't match her appearance.</p>
+				<img src="img/chara_61.png" class="toto-1">
+				<img src="img/face_61.png" class="toto-2">
+			</div>
+			<hr class="pembatas">
+		</div>	
+	</div>
+
+	<div id="ABOUT" class="w3-container bagian" style="display: none;">
+		<div class="w3-panel w3-blue fade">
+			<div class="w3-panel w3-grey">
+				<img src="img/gwehh1.jpg">
+				<div class="dalem">
+					<h1>Haafiz Dauz Syahputra</h1><hr class="batas-pro">
+					<h2>10123087</h2>
+					<h2>IF-3</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="STORY" class="w3-container bagian" style="display:none">
+		<div class="w3-panel w3-blue fade">
+			<h1><b>STORY</b></h1><hr>
+			<p>After a brutal surprise attack by the forces of Quincy King Yhwach, the resident Reapers of the Soul Society lick their wounds and mourn their losses. 
+				Many of the surviving Soul Reaper captains train to battle without their Bankai, the ultimate technique wielded by the fiercest warriors.<br>
+				In the previous assault, Ichigo Kurosaki narrowly managed to help fend off Yhwach's fearsome wrath. However, 
+				to ultimately defeat his godly adversary and save his allies, Ichigo must now undergo severe training that will push him beyond his physical, 
+				emotional, and mental limits.<br>
+				Though Yhwach already holds the upper hand in this ongoing blood feud, he also successfully recruits Uryuu Ishida, 
+				Ichigo's close friend and rival, to be his successor. Yhwach strikes out once again at the weakened Soul Society, 
+				intent on finally obliterating his long-standing enemies. As Ichigo struggles to attain new power, the Soul Reaper captains fight for
+				survival and borrowed time.</p>
+		</div>
+	</div>
+
+	<div id="HOME" class="w3-container bagian" style="display:none">
+		<div class="w3-panel w3-blue fade">
+			<center><img src="img/aizenn.jpg"></center>
+			<h1><b>INTRODUCTION</b></h1>
+			<p>Originally released as part of the Weekly Shonen Jump lineup, BLEACH the manga continues to capture readers’ hearts throughout the world with over 130 million volumes sold to date.
+				The 366-episode-long epic anime TV series BLEACH found its start back in October of 2004 and led to four feature films.
+				Now, “Thousand-Year Blood War”, the concluding arc of the iconic anime, is finally about to unfold.
+				For the occasion, eminent anime maestro Tomohisa Taguchi brings his unique visual sense as Series Director and Series Composition.
+				Joining the team are BLEACH anime veterans Shiro SAGISU (musician) and Masashi Kudo (character designer). And to bring it all to life once again is studio Pierrot for animation production.
+				The team of talented veterans is ready for the final showdown.
+				What awaits Ichigo Kurosaki?</p>
+		</div>
+	</div>
+	
+	<style>
+		.pembatas {
+			margin-top: 5vw;
+		}
+
+		.tabel {
+			font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W3",
+			"Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", 
+			"ＭＳ Ｐ明朝", "Noto Serif JP", "serif";
+			border-top-left-radius: 12px;
+			border-bottom-left-radius: 12px;
+			border-top-right-radius: 12px;
+			border-bottom-right-radius: 12px;
+			width: 97.99vw;
+			height: auto;
+			position: relative;
+		}
+
+		.bagian {
+			font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W3",
+			"Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", 
+			"ＭＳ Ｐ明朝", "Noto Serif JP", "serif";
+		}
+
+		.sekai, .shinigami, .quincy {
+			animation: fadeInLeft 0.5s;
+		}
+
+		/*WORLD OF THE LIVING*/
+			/*bagian ichigo*/
+			#Sekai.bagian .ichigo h1 {
+				font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W3",
+				"Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", 
+				"ＭＳ Ｐ明朝", "Noto Serif JP", "serif";
+				width: 50vw;
+				height: auto;
+				margin: 1vw 1vw;
+			}
+
+			#Sekai.bagian .ichigo p {
+				font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W3",
+				"Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", 
+				"ＭＳ Ｐ明朝", "Noto Serif JP", "serif";
+				font-size: 20px;
+				width: 50vw;
+				height: auto;
+				margin: 5vw 5vw;
+			}
+
+			#Sekai.bagian .ichigo .ichi-1 {
+				width: 30vw;
+				height: auto;
+				margin: -20vw 60vw;
+			}
+			
+			#Sekai.bagian .ichigo .ichi-2 {
+				width: 30vw;
+				height: auto;
+				margin: 1vw 10vw;
+			}
+
+			/*bagian urahara*/
+			#Sekai.bagian .urahara h1 {
+				font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W3",
+				"Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", 
+				"ＭＳ Ｐ明朝", "Noto Serif JP", "serif";
+				width: 50vw;
+				height: auto;
+				margin: 1vw 1vw;
+			}
+
+			#Sekai.bagian .urahara p {
+				font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W3",
+				"Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", 
+				"ＭＳ Ｐ明朝", "Noto Serif JP", "serif";
+				font-size: 20px;
+				width: 50vw;
+				height: auto;
+				margin: 5vw 5vw;
+			}
+
+			#Sekai.bagian .urahara .ura-1 {
+				width: 30vw;
+				height: auto;
+				margin: -20vw 60vw;
+			}
+			
+			#Sekai.bagian .urahara .ura-2 {
+				width: 30vw;
+				height: auto;
+				margin: 1vw 10vw;
+			}
+
+			/*bagian orihime*/
+			#Sekai.bagian .orihime h1 {
+				font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W3",
+				"Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", 
+				"ＭＳ Ｐ明朝", "Noto Serif JP", "serif";
+				width: 50vw;
+				height: auto;
+				margin: 1vw 1vw;
+			}
+
+			#Sekai.bagian .orihime p {
+				font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W3",
+				"Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", 
+				"ＭＳ Ｐ明朝", "Noto Serif JP", "serif";
+				font-size: 20px;
+				width: 50vw;
+				height: auto;
+				margin: 5vw 5vw;
+			}
+
+			#Sekai.bagian .orihime .ori-1 {
+				width: 30vw;
+				height: auto;
+				margin: -20vw 60vw;
+			}
+			
+			#Sekai.bagian .orihime .ori-2 {
+				width: 30vw;
+				height: auto;
+				margin: 1vw 10vw;
+			}
+
+			/*bagian chad*/
+			#Sekai.bagian .chad h1 {
+				font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W3",
+				"Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", 
+				"ＭＳ Ｐ明朝", "Noto Serif JP", "serif";
+				width: 50vw;
+				height: auto;
+				margin: 1vw 1vw;
+			}
+
+			#Sekai.bagian .chad p {
+				font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W3",
+				"Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", 
+				"ＭＳ Ｐ明朝", "Noto Serif JP", "serif";
+				font-size: 20px;
+				width: 50vw;
+				height: auto;
+				margin: 5vw 5vw;
+			}
+
+			#Sekai.bagian .chad .chad-1 {
+				width: 30vw;
+				height: auto;
+				margin: -20vw 60vw;
+			}
+			
+			#Sekai.bagian .chad .chad-2 {
+				width: 30vw;
+				height: auto;
+				margin: 1vw 10vw;
+			}
+
+			/*bagian yoruichi*/
+			#Sekai.bagian .yoruichi h1 {
+				font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W3",
+				"Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", 
+				"ＭＳ Ｐ明朝", "Noto Serif JP", "serif";
+				width: 50vw;
+				height: auto;
+				margin: 1vw 1vw;
+			}
+
+			#Sekai.bagian .yoruichi p {
+				font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W3",
+				"Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", 
+				"ＭＳ Ｐ明朝", "Noto Serif JP", "serif";
+				font-size: 20px;
+				width: 50vw;
+				height: auto;
+				margin: 5vw 5vw;
+			}
+
+			#Sekai.bagian .yoruichi .yoru-1 {
+				width: 30vw;
+				height: auto;
+				margin: -20vw 60vw;
+			}
+			
+			#Sekai.bagian .yoruichi .yoru-2 {
+				width: 30vw;
+				height: auto;
+				margin: 1vw 10vw;
+			}
+
+		/*SHINIGAMI*/
+			/*bagian yamamoto*/
+			#Shinigami.bagian .yamamoto h1 {
+				font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W3",
+				"Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", 
+				"ＭＳ Ｐ明朝", "Noto Serif JP", "serif";
+				width: 50vw;
+				height: auto;
+				margin: 1vw 1vw;
+			}
+
+			#Shinigami.bagian .yamamoto p {
+				font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W3",
+				"Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", 
+				"ＭＳ Ｐ明朝", "Noto Serif JP", "serif";
+				font-size: 20px;
+				width: 50vw;
+				height: auto;
+				margin: 5vw 5vw;
+			}
+
+			#Shinigami.bagian .yamamoto .yama-1 {
+				width: 30vw;
+				height: auto;
+				margin: -20vw 60vw;
+			}
+			
+			#Shinigami.bagian .yamamoto .yama-2 {
+				width: 30vw;
+				height: auto;
+				margin: 1vw 10vw;
+			}
+
+			/*bagian kyoraku*/
+			#Shinigami.bagian .kyoraku h1 {
+				font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W3",
+				"Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", 
+				"ＭＳ Ｐ明朝", "Noto Serif JP", "serif";
+				width: 50vw;
+				height: auto;
+				margin: 1vw 1vw;
+			}
+
+			#Shinigami.bagian .kyoraku p {
+				font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W3",
+				"Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", 
+				"ＭＳ Ｐ明朝", "Noto Serif JP", "serif";
+				font-size: 20px;
+				width: 50vw;
+				height: auto;
+				margin: 5vw 5vw;
+			}
+
+			#Shinigami.bagian .kyoraku .kyo-1 {
+				width: 30vw;
+				height: auto;
+				margin: -20vw 60vw;
+			}
+			
+			#Shinigami.bagian .kyoraku .kyo-2 {
+				width: 30vw;
+				height: auto;
+				margin: 1vw 10vw;
+			}
+
+			/*bagian unohana*/
+			#Shinigami.bagian .unohana h1 {
+				font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W3",
+				"Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", 
+				"ＭＳ Ｐ明朝", "Noto Serif JP", "serif";
+				width: 50vw;
+				height: auto;
+				margin: 1vw 1vw;
+			}
+
+			#Shinigami.bagian .unohana p {
+				font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W3",
+				"Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", 
+				"ＭＳ Ｐ明朝", "Noto Serif JP", "serif";
+				font-size: 20px;
+				width: 50vw;
+				height: auto;
+				margin: 5vw 5vw;
+			}
+
+			#Shinigami.bagian .unohana .uno-1 {
+				width: 30vw;
+				height: auto;
+				margin: -20vw 60vw;
+			}
+			
+			#Shinigami.bagian .unohana .uno-2 {
+				width: 30vw;
+				height: auto;
+				margin: 1vw 10vw;
+			}
+
+			/*bagian byakuya*/
+			#Shinigami.bagian .byakuya h1 {
+				font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W3",
+				"Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", 
+				"ＭＳ Ｐ明朝", "Noto Serif JP", "serif";
+				width: 50vw;
+				height: auto;
+				margin: 1vw 1vw;
+			}
+
+			#Shinigami.bagian .byakuya p {
+				font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W3",
+				"Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", 
+				"ＭＳ Ｐ明朝", "Noto Serif JP", "serif";
+				font-size: 20px;
+				width: 50vw;
+				height: auto;
+				margin: 5vw 5vw;
+			}
+
+			#Shinigami.bagian .byakuya .bya-1 {
+				width: 30vw;
+				height: auto;
+				margin: -20vw 60vw;
+			}
+			
+			#Shinigami.bagian .byakuya .bya-2 {
+				width: 30vw;
+				height: auto;
+				margin: 1vw 10vw;
+			}
+
+			/*bagian hitsugaya*/
+			#Shinigami.bagian .hitsugaya h1 {
+				font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W3",
+				"Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", 
+				"ＭＳ Ｐ明朝", "Noto Serif JP", "serif";
+				width: 50vw;
+				height: auto;
+				margin: 1vw 1vw;
+			}
+
+			#Shinigami.bagian .hitsugaya p {
+				font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W3",
+				"Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", 
+				"ＭＳ Ｐ明朝", "Noto Serif JP", "serif";
+				font-size: 20px;
+				width: 50vw;
+				height: auto;
+				margin: 5vw 5vw;
+			}
+
+			#Shinigami.bagian .hitsugaya .toshi-1 {
+				width: 30vw;
+				height: auto;
+				margin: -20vw 60vw;
+			}
+			
+			#Shinigami.bagian .hitsugaya .toshi-2 {
+				width: 30vw;
+				height: auto;
+				margin: 1vw 10vw;
+			}
+
+			/*bagian rukia*/
+			#Shinigami.bagian .rukia h1 {
+				font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W3",
+				"Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", 
+				"ＭＳ Ｐ明朝", "Noto Serif JP", "serif";
+				width: 50vw;
+				height: auto;
+				margin: 1vw 1vw;
+			}
+
+			#Shinigami.bagian .rukia p {
+				font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W3",
+				"Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", 
+				"ＭＳ Ｐ明朝", "Noto Serif JP", "serif";
+				font-size: 20px;
+				width: 50vw;
+				height: auto;
+				margin: 5vw 5vw;
+			}
+
+			#Shinigami.bagian .rukia .ru-1 {
+				width: 30vw;
+				height: auto;
+				margin: -20vw 60vw;
+			}
+			
+			#Shinigami.bagian .rukia .ru-2 {
+				width: 30vw;
+				height: auto;
+				margin: 1vw 10vw;
+			}
+
+			/*bagian renji*/
+			#Shinigami.bagian .renji h1 {
+				font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W3",
+				"Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", 
+				"ＭＳ Ｐ明朝", "Noto Serif JP", "serif";
+				width: 50vw;
+				height: auto;
+				margin: 1vw 1vw;
+			}
+
+			#Shinigami.bagian .renji p {
+				font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W3",
+				"Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", 
+				"ＭＳ Ｐ明朝", "Noto Serif JP", "serif";
+				font-size: 20px;
+				width: 50vw;
+				height: auto;
+				margin: 5vw 5vw;
+			}
+
+			#Shinigami.bagian .renji .ren-1 {
+				width: 30vw;
+				height: auto;
+				margin: -20vw 60vw;
+			}
+			
+			#Shinigami.bagian .renji .ren-2 {
+				width: 30vw;
+				height: auto;
+				margin: 1vw 10vw;
+			}
+
+			/*bagian aizen*/
+			#Shinigami.bagian .aizen h1 {
+				font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W3",
+				"Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", 
+				"ＭＳ Ｐ明朝", "Noto Serif JP", "serif";
+				width: 50vw;
+				height: auto;
+				margin: 1vw 1vw;
+			}
+
+			#Shinigami.bagian .aizen p {
+				font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W3",
+				"Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", 
+				"ＭＳ Ｐ明朝", "Noto Serif JP", "serif";
+				font-size: 20px;
+				width: 50vw;
+				height: auto;
+				margin: 5vw 5vw;
+			}
+
+			#Shinigami.bagian .aizen .ai-1 {
+				width: 30vw;
+				height: auto;
+				margin: -20vw 60vw;
+			}
+			
+			#Shinigami.bagian .aizen .ai-2 {
+				width: 30vw;
+				height: auto;
+				margin: 1vw 10vw;
+			}
+
+			/*bagian nanao*/
+			#Shinigami.bagian .nanao h1 {
+				font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W3",
+				"Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", 
+				"ＭＳ Ｐ明朝", "Noto Serif JP", "serif";
+				width: 50vw;
+				height: auto;
+				margin: 1vw 1vw;
+			}
+
+			#Shinigami.bagian .nanao p {
+				font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W3",
+				"Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", 
+				"ＭＳ Ｐ明朝", "Noto Serif JP", "serif";
+				font-size: 20px;
+				width: 50vw;
+				height: auto;
+				margin: 5vw 5vw;
+			}
+
+			#Shinigami.bagian .nanao .ise-1 {
+				width: 30vw;
+				height: auto;
+				margin: -20vw 60vw;
+			}
+			
+			#Shinigami.bagian .nanao .ise-2 {
+				width: 30vw;
+				height: auto;
+				margin: 1vw 10vw;
+			}
+
+			/*bagian soi fon*/
+			#Shinigami.bagian .soifon h1 {
+				font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W3",
+				"Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", 
+				"ＭＳ Ｐ明朝", "Noto Serif JP", "serif";
+				width: 50vw;
+				height: auto;
+				margin: 1vw 1vw;
+			}
+
+			#Shinigami.bagian .soifon p {
+				font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W3",
+				"Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", 
+				"ＭＳ Ｐ明朝", "Noto Serif JP", "serif";
+				font-size: 20px;
+				width: 50vw;
+				height: auto;
+				margin: 5vw 5vw;
+			}
+
+			#Shinigami.bagian .soifon .soi-1 {
+				width: 30vw;
+				height: auto;
+				margin: -20vw 60vw;
+			}
+			
+			#Shinigami.bagian .soifon .soi-2 {
+				width: 30vw;
+				height: auto;
+				margin: 1vw 10vw;
+			}
+
+			/*bagian kenpachi*/
+			#Shinigami.bagian .kenpachi h1 {
+				font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W3",
+				"Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", 
+				"ＭＳ Ｐ明朝", "Noto Serif JP", "serif";
+				width: 50vw;
+				height: auto;
+				margin: 1vw 1vw;
+			}
+
+			#Shinigami.bagian .kenpachi p {
+				font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W3",
+				"Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", 
+				"ＭＳ Ｐ明朝", "Noto Serif JP", "serif";
+				font-size: 20px;
+				width: 50vw;
+				height: auto;
+				margin: 5vw 5vw;
+			}
+
+			#Shinigami.bagian .kenpachi .ken-1 {
+				width: 30vw;
+				height: auto;
+				margin: -20vw 60vw;
+			}
+			
+			#Shinigami.bagian .kenpachi .ken-2 {
+				width: 30vw;
+				height: auto;
+				margin: 1vw 10vw;
+			}
+
+		/*QUINCY*/
+			/*bagian yhwach*/
+			#Quincy.bagian .yhwach h1 {
+				font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W3",
+				"Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", 
+				"ＭＳ Ｐ明朝", "Noto Serif JP", "serif";
+				width: 50vw;
+				height: auto;
+				margin: 1vw 1vw;
+			}
+
+			#Quincy.bagian .yhwach p {
+				font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W3",
+				"Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", 
+				"ＭＳ Ｐ明朝", "Noto Serif JP", "serif";
+				font-size: 20px;
+				width: 50vw;
+				height: auto;
+				margin: 5vw 5vw;
+			}
+
+			#Quincy.bagian .yhwach .yuha-1 {
+				width: 30vw;
+				height: auto;
+				margin: -20vw 60vw;
+			}
+			
+			#Quincy.bagian .yhwach .yuha-2 {
+				width: 30vw;
+				height: auto;
+				margin: 1vw 10vw;
+			}
+
+			/*bagian ishida*/
+			#Quincy.bagian .ishida h1 {
+				font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W3",
+				"Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", 
+				"ＭＳ Ｐ明朝", "Noto Serif JP", "serif";
+				width: 50vw;
+				height: auto;
+				margin: 1vw 1vw;
+			}
+
+			#Quincy.bagian .ishida p {
+				font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W3",
+				"Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", 
+				"ＭＳ Ｐ明朝", "Noto Serif JP", "serif";
+				font-size: 20px;
+				width: 50vw;
+				height: auto;
+				margin: 5vw 5vw;
+			}
+
+			#Quincy.bagian .ishida .uryu-1 {
+				width: 30vw;
+				height: auto;
+				margin: -20vw 60vw;
+			}
+			
+			#Quincy.bagian .ishida .uryu-2 {
+				width: 30vw;
+				height: auto;
+				margin: 1vw 10vw;
+			}
+
+			/*bagian jugram*/
+			#Quincy.bagian .jugram h1 {
+				font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W3",
+				"Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", 
+				"ＭＳ Ｐ明朝", "Noto Serif JP", "serif";
+				width: 50vw;
+				height: auto;
+				margin: 1vw 1vw;
+			}
+
+			#Quincy.bagian .jugram p {
+				font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W3",
+				"Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", 
+				"ＭＳ Ｐ明朝", "Noto Serif JP", "serif";
+				font-size: 20px;
+				width: 50vw;
+				height: auto;
+				margin: 5vw 5vw;
+			}
+
+			#Quincy.bagian .jugram .ju-1 {
+				width: 30vw;
+				height: auto;
+				margin: -16vw 60vw;
+			}
+			
+			#Quincy.bagian .jugram .ju-2 {
+				width: 30vw;
+				height: auto;
+				margin: 1vw 10vw;
+			}
+
+			/*bagian bambietta*/
+			#Quincy.bagian .bambietta h1 {
+				font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W3",
+				"Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", 
+				"ＭＳ Ｐ明朝", "Noto Serif JP", "serif";
+				width: 50vw;
+				height: auto;
+				margin: 1vw 1vw;
+			}
+
+			#Quincy.bagian .bambietta p {
+				font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W3",
+				"Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", 
+				"ＭＳ Ｐ明朝", "Noto Serif JP", "serif";
+				font-size: 20px;
+				width: 50vw;
+				height: auto;
+				margin: 5vw 5vw;
+			}
+
+			#Quincy.bagian .bambietta .bambi-1 {
+				width: 30vw;
+				height: auto;
+				margin: -16vw 60vw;
+			}
+			
+			#Quincy.bagian .bambietta .bambi-2 {
+				width: 30vw;
+				height: auto;
+				margin: 1vw 10vw;
+			}
+
+			/*bagian bazzb*/
+			#Quincy.bagian .bazzb h1 {
+				font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W3",
+				"Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", 
+				"ＭＳ Ｐ明朝", "Noto Serif JP", "serif";
+				width: 50vw;
+				height: auto;
+				margin: 1vw 1vw;
+			}
+
+			#Quincy.bagian .bazzb p {
+				font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W3",
+				"Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", 
+				"ＭＳ Ｐ明朝", "Noto Serif JP", "serif";
+				font-size: 20px;
+				width: 50vw;
+				height: auto;
+				margin: 5vw 5vw;
+			}
+
+			#Quincy.bagian .bazzb .bazz-1 {
+				width: 30vw;
+				height: auto;
+				margin: -16vw 60vw;
+			}
+			
+			#Quincy.bagian .bazzb .bazz-2 {
+				width: 30vw;
+				height: auto;
+				margin: 1vw 10vw;
+			}
+
+			/*bagian gremmy*/
+			#Quincy.bagian .gremmy h1 {
+				font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W3",
+				"Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", 
+				"ＭＳ Ｐ明朝", "Noto Serif JP", "serif";
+				width: 50vw;
+				height: auto;
+				margin: 1vw 1vw;
+			}
+
+			#Quincy.bagian .gremmy p {
+				font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W3",
+				"Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", 
+				"ＭＳ Ｐ明朝", "Noto Serif JP", "serif";
+				font-size: 20px;
+				width: 50vw;
+				height: auto;
+				margin: 5vw 5vw;
+			}
+
+			#Quincy.bagian .gremmy .grem-1 {
+				width: 30vw;
+				height: auto;
+				margin: -16vw 60vw;
+			}
+			
+			#Quincy.bagian .gremmy .grem-2 {
+				width: 30vw;
+				height: auto;
+				margin: 1vw 10vw;
+			}
+
+			/*bagian lille*/
+			#Quincy.bagian .lille h1 {
+				font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W3",
+				"Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", 
+				"ＭＳ Ｐ明朝", "Noto Serif JP", "serif";
+				width: 50vw;
+				height: auto;
+				margin: 1vw 1vw;
+			}
+
+			#Quincy.bagian .lille p {
+				font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W3",
+				"Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", 
+				"ＭＳ Ｐ明朝", "Noto Serif JP", "serif";
+				font-size: 20px;
+				width: 50vw;
+				height: auto;
+				margin: 5vw 5vw;
+			}
+
+			#Quincy.bagian .lille .lil-1 {
+				width: 30vw;
+				height: auto;
+				margin: -16vw 60vw;
+			}
+			
+			#Quincy.bagian .lille .lil-2 {
+				width: 30vw;
+				height: auto;
+				margin: 1vw 10vw;
+			}
+
+			/*bagian askin*/
+			#Quincy.bagian .askin h1 {
+				font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W3",
+				"Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", 
+				"ＭＳ Ｐ明朝", "Noto Serif JP", "serif";
+				width: 50vw;
+				height: auto;
+				margin: 1vw 1vw;
+			}
+
+			#Quincy.bagian .askin p {
+				font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W3",
+				"Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", 
+				"ＭＳ Ｐ明朝", "Noto Serif JP", "serif";
+				font-size: 20px;
+				width: 50vw;
+				height: auto;
+				margin: 5vw 5vw;
+			}
+
+			#Quincy.bagian .askin .ask-1 {
+				width: 30vw;
+				height: auto;
+				margin: -16vw 60vw;
+			}
+			
+			#Quincy.bagian .askin .ask-2 {
+				width: 30vw;
+				height: auto;
+				margin: 1vw 10vw;
+			}
+
+			/*bagian liltotto*/
+			#Quincy.bagian .liltotto h1 {
+				font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W3",
+				"Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", 
+				"ＭＳ Ｐ明朝", "Noto Serif JP", "serif";
+				width: 50vw;
+				height: auto;
+				margin: 1vw 1vw;
+			}
+
+			#Quincy.bagian .liltotto p {
+				font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W3",
+				"Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", 
+				"ＭＳ Ｐ明朝", "Noto Serif JP", "serif";
+				font-size: 20px;
+				width: 50vw;
+				height: auto;
+				margin: 5vw 5vw;
+			}
+
+			#Quincy.bagian .liltotto .toto-1 {
+				width: 30vw;
+				height: auto;
+				margin: -20vw 60vw;
+			}
+			
+			#Quincy.bagian .liltotto .toto-2 {
+				width: 30vw;
+				height: auto;
+				margin: 1vw 10vw;
+			}
+
+		#ABOUT.bagian .batas-pro {
+			width: 30%;
+			height: auto;
+		}
+
+		#ABOUT.bagian .dalem {
+			text-align: left;
+			width: 100%;
+			height: auto;
+			margin-left: 45vw;
+			margin-top: -30vw;
+			position: absolute;
+		}
+
+		#ABOUT.bagian h1, h2 {
+			font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W3",
+			"Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", 
+			"ＭＳ Ｐ明朝", "Noto Serif JP", "serif";
+		}
+
+		#ABOUT.bagian img {
+			width: 20%;
+			height: auto;
+			margin: 10vw 20vw;
+		}
+
+		#ABOUT.bagian img:hover {
+			color: blue;
+		}
+
+		#STORY.bagian h1 {
+			font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W3",
+			"Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", 
+			"ＭＳ Ｐ明朝", "Noto Serif JP", "serif";
+			text-align: center;
+			animation: fadeIn 0.3s ease-in;
+			font-size: 35px;
+		}
+
+		#STORY.bagian p {
+			font-size: 30px;
+		}
+
+		#HOME.bagian img {
+			background-repeat: no-repeat;
+			background-position: center;
+			width: 40%;
+			height: auto;
+			margin-top: 20px;
+			animation: fadeInDown 0.3s ease-out;
+		}
+		#HOME.bagian h1 {
+			text-align: center;
+			font-size: 35px;
+			animation: fadeIn 0.3s ease-in;
+			font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W3",
+			"Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", 
+			"ＭＳ Ｐ明朝", "Noto Serif JP", "serif";
+		}
+
+		#HOME.bagian p {
+			font-size: 30px;
+		}
+		
+		.content {
+			animation: fadeIn 0.5s ease-out;
+		}
+
+		.logo {
+			animation: fadeInDown 0.3s ease-out;
+		}
+
+		.fade {
+			animation: fadeIn 0.5s ease-out;
+		}
+
+		.fade-left {
+			animation: fadeInLeft 0.3s ease-in;
+		}
+
+		.fade-right {
+			animation: fadeInRight 0.8s ease-in;
+		}
+
+		@keyframes fadeIn {
+			from {
+				opacity: 0;
+			}
+			to {
+				opacity: 1;
+			}
+			/*animasi yuha text story*/
+			0% { opacity: 0; }
+			100% { opacity: 1; }
+		}
+
+		@keyframes fadeInDown {
+			0% {
+				opacity: 0;
+				transform: translateY(-20px);
+			}
+			100% {
+				opacity: 1;
+				transform: translateY(0);
+			}
+		} 
+
+		/*animasi text char/story/profile*/
+		@keyframes fadeInLeft {
+			0% {
+				opacity: 0;
+				transform: translateX(-150px);
+			}
+			100% {
+				opacity: 1;
+				transform: translateX(0);
+			}
+		} 
+
+		@keyframes fadeInRight {
+			0% {
+				opacity: 0;
+				transform: translateX(20px);
+			}
+			100% {
+				opacity: 1;
+				transform: translateX(0);
+			}
+		}
+
+		.content {
+			width: 100%; /* Default size */
+
+			@media (min-width: 600px) {
+				width: 50%; /* Adjust as needed for larger screens */
+			}
+
+			@media (min-width: 1200px) {
+				width: 30%; /* Adjust as needed for even larger screens */
+			}
+		}
+	</style>
+
+	<script>
+	function openBleach(namabagian) {
+	  var i;
+	  var x = document.getElementsByClassName("bagian");
+	  for (i = 0; i < x.length; i++) {
+		x[i].style.display = "none";  
+	  }
+	  document.getElementById(namabagian).style.display = "block";  
+	}
+	</script>
+	</body>
+</html>
